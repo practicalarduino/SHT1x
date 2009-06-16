@@ -57,7 +57,7 @@ float SHT1x::readTemperatureF()
   // Fetch raw value
   _val = readTemperatureRaw();
 
-  // Convert raw value to degrees Celsius
+  // Convert raw value to degrees Fahrenheit
   _temperature = (_val * D2) + D1;
 
   return (_temperature);
