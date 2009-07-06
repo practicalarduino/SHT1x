@@ -1,0 +1,4 @@
+SHT1x	KEYWORD1
+readHumidity	KEYWORD2
+readTemperatureC	KEYWORD2
+readTemperatureF	KEYWORD2
