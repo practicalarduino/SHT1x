@@ -54,7 +54,7 @@ Example:
 ### readHumidity() ###
 
 Returns a float within the valid range of the sensor of 0 to 100%.
-A value of -4.4 is returned in the event of a communication error with
+A negative value is returned in the event of a communication error with
 the sensor.
 
 Example:
