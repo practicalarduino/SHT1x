@@ -33,24 +33,24 @@ the library and can be accessed from the File->Examples->SHT1x menu.
 
 ### readTemperatureC() ###
 
-    float tempC = sht1x.readTemperatureC();
-
-Returns a float within the valid range of the sensor of -40 to +123.8.
+Returns a float within the valid range of the sensor of -40 to +123.8C.
 A value of -40 is returned in the event of a communications error with
-the module.
+the sensor. Example:
+
+    float tempC = sht1x.readTemperatureC();
 
 ### readTemperatureF() ###
 
-    float tempF = sht1x.readTemperatureF();
-
-Returns a float within the valid range of the sensor of -40 to +254.9C.
+Returns a float within the valid range of the sensor of -40 to +254.9F.
 A value of -40 is returned in the event of a communications error with
-the module.
+the sensor. Example:
+
+    float tempF = sht1x.readTemperatureF();
 
 ### readHumidity() ###
 
-    float humidity = sht1x.readHumidity();
-
 Returns a float within the valid range of the sensor of 0 to 100%.
 A value of -4.4 is returned in the event of a communication error with
-the module.
+the sensor. Example:
+
+    float humidity = sht1x.readHumidity();
