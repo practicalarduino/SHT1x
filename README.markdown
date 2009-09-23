@@ -1,6 +1,6 @@
 SHT1x Temperature / Humidity Sensor Library for Arduino
 =======================================================
-Copyright 2009 Jonathan Oxer <jon@oxer.com.au> / <www.practicalarduino.com>
+Copyright 2009 Jonathan Oxer <jon@oxer.com.au> / <www.practicalarduino.com>  
 Copyright 2008 Maurice Ribble <ribblem@yahoo.com> / <www.glacialwanderer.com>
 
 Provides a simple interface to the SHT1x series (SHT10, SHT11, SHT15)
@@ -31,17 +31,26 @@ example we created an object called "sht1x", but it could have been
 called whatever you like. A complete example program is included with
 the library and can be accessed from the File->Examples->SHT1x menu.
 
-### float sht1x.readTemperatureC() ###
+### readTemperatureC() ###
+
+    float tempC = sht1x.readTemperatureC();
+
 Returns a float within the valid range of the sensor of -40 to +123.8.
 A value of -40 is returned in the event of a communications error with
 the module.
 
-### float sht1x.readTemperatureF() ###
+### readTemperatureF() ###
+
+    float tempF = sht1x.readTemperatureF();
+
 Returns a float within the valid range of the sensor of -40 to +254.9C.
 A value of -40 is returned in the event of a communications error with
 the module.
 
-### float sht1x.readHumidity() ###
+### readHumidity() ###
+
+    float humidity = sht1x.readHumidity();
+
 Returns a float within the valid range of the sensor of 0 to 100%.
 A value of -4.4 is returned in the event of a communication error with
 the module.
