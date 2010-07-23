@@ -4,9 +4,10 @@ Copyright 2009 Jonathan Oxer jon@oxer.com.au / http://www.practicalarduino.com
 Copyright 2008 Maurice Ribble ribblem@yahoo.com / http://www.glacialwanderer.com
 
 Provides a simple interface to the SHT1x series (SHT10, SHT11, SHT15)
-temperature / humidity sensors from Sensirion, http://www.sensirion.com.
-These sensors use a "2-wire" communications buss that is similar to I2C
-and can co-exist on the same physical wire as I2C devices.
+and SHT7x series (SHT71, SHT75) temperature / humidity sensors from
+Sensirion, http://www.sensirion.com. These sensors use a "2-wire"
+communications buss that is similar to I2C and can co-exist on the same
+physical wire as I2C devices.
 
 Installation
 ------------
