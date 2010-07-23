@@ -96,7 +96,7 @@ float SHT1x::readHumidity()
   _temperature = readTemperatureC();
 
   // Correct humidity value for current temperature
-  _correctedHumidity = _temperature * (T1 + T2 * _val) + _linearHumidity;
+  _correctedHumidity = (_temperature - 25.0 ) * (T1 + T2 * _val) + _linearHumidity;
 
   return (_correctedHumidity);
 }
