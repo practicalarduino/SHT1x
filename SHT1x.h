@@ -12,7 +12,11 @@
 #ifndef SHT1x_h
 #define SHT1x_h
 
-#include "WProgram.h"
+#if (ARDUINO >= 100)
+#include <Arduino.h>
+#else
+#include <WProgram.h>
+#endif
 
 class SHT1x
 {
