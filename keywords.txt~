@@ -1,11 +1,11 @@
-SHT1x	KEYWORD1
-readHumidity	KEYWORD2
+SHT1x			KEYWORD1
+readHumidity		KEYWORD2
 readTemperatureC	KEYWORD2
 readTemperatureF	KEYWORD2
 requestTemperature	KEYWORD2
 readInTemperature	KEYWORD2
-requestHumidity	KEYWORD2
-readInHumidity	KEYWORD2
-parseHumidity	KEYWORD2
+requestHumidity		KEYWORD2
+readInHumidity		KEYWORD2
+parseHumidity		KEYWORD2
 parseTemperatureC	KEYWORD2
 parseTemperatureF	KEYWORD2

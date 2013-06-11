@@ -25,11 +25,14 @@ class SHT1x
   public:
     SHT1x(int dataPin, int clockPin);
     SHT1x(int dataPin, int clockPin, float voltage);
-    //composite functions
     float readHumidity();
     float readTemperatureC();
     float readTemperatureF();
-    //decoupled functions
+    
+    void sendCommandSHT(int _command, int _dataPin, int _clockPin);
+    void waitForResultSHT(int _dataPin);
+    int getData16SHT(int _dataPin, int _clockPin);
+    void skipCrcSHT(int _dataPin, int _clockPin);
     void requestTemperature();
     int readInTemperature();
     void requestHumidity();
@@ -46,12 +49,6 @@ class SHT1x
     float _D1C; float _D1F; float _D2C; float _D2F;
     float _linearInterpolation(float coeffA, float coeffB, float valB, float input);
     void _setConversionCoeffs(float voltage);
-
-    void sendCommandSHT(int _command, int _dataPin, int _clockPin);
-    void waitForResultSHT(int _dataPin);
-    int getData16SHT(int _dataPin, int _clockPin);
-    void skipCrcSHT(int _dataPin, int _clockPin);
-
 };
 
 #endif
