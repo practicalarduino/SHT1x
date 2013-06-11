@@ -116,6 +116,7 @@ int SHT1x::readInTemperature()
   return _temperatureRaw;
 }
 
+
 /**
  * Reads current temperature-corrected relative humidity
  */
